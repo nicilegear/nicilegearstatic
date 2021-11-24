@@ -68,9 +68,10 @@ use [ CTR + F ] and type [ SECTION NAME ] or [ .class-name ] You can find it qui
 /*------------------------------------*\
     #RESET
 \*------------------------------------*/
+/* changes painting description under Latest works*/
 .portfolio .portfolio-cat {
 	color: #9b9b9b;
-	font-family: 'Droid Serif', serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	font-style: normal;
@@ -80,4 +81,72 @@ use [ CTR + F ] and type [ SECTION NAME ] or [ .class-name ] You can find it qui
 	-moz-transition: all 0.8s ease-in-out;
 	-o-transition: all 0.8s ease-in-out;
 	transition: all 0.8s ease-in-out;
+}
+/* changed font from serif to a sans serif one. This is for Story description*/
+p {
+	font-family: 'Poppins', sans-serif;
+	color: #616161;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+.about-4 .about-content p {
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 23px;
+}
+/* changed size - increased size of Story headline*/
+.about-4 .about-icon h6 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1;
+	padding-top: 22px;
+	padding-left: 11px;
+	position: relative;
+}
+/* changed font from serif to a sans serif one. This is for latest works description*/
+.heading p {
+	color: #616161;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 23px;
+	margin-bottom: 0;
+}
+/* changed slider info from serif to sans serif.*/
+.slider .slide--bio {
+	color: #474747;
+	font-family: 'Poppins', sans-serif;
+	font-style: italic;
+	line-height: 26px;
+}
+/* changing font to sans serif font from droid serif to poppins */
+.text-font-body {
+	font-family: 'Poppins', serif;
+}
+/*change footer from droid serif to poppins*/
+.footer-info-widget p {
+	font-family: 'Poppins', serif;
+	line-height: 22px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+/*changed colour of statement to less dark grey*/
+.footer-info-widget .bio-info p {
+	color: #9b9b9b;
+	font-size: 13px;
+	font-style: italic;
+	max-width: 510px;
+	display: inline-block;
+}
+/*footer widget get in touch font change*/
+.footer-widget h3 {
+	color: #616161;
+	font-family: 'Poppins', serif;
+	font-size: 13px;
+	font-style: italic;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 17px;
 }
