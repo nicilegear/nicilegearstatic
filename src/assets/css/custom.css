@@ -1,0 +1,83 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Custom style sheet to override other styles that I want to change. NLG
+-----------------------------------------------------------------------------------*/
+/*!
+// Contents
+// ------------------------------------------------>
+
+  1.  Global Styles
+ 2.  Typography
+ 3.	 Blockquotes
+ 4.	 List
+ 5.	 Colors
+ 6.	 Hepers
+ 7.	 Background
+ 8.	 Buttons
+ 9.	 Forms
+ 10. Icons
+ 11. Media
+ 12. Tabs
+ 13. Accordions
+ 14. Heading
+ 15. Page Title
+ 16. Pagination
+ 17. Columns
+ 18. Alerts
+ 19. Backtop
+ 20. Social
+ 21. Loading
+ 22. Header
+ 23. Menu
+ 24. Hero
+ 25. shortcode
+ 26. Team
+ 27. Testimonial
+ 28. Services
+ 29. Portfolio
+ 30. Feature
+ 31. Call To Action
+ 32. Counter
+ 33. Pricing Tables
+ 34. Blog
+ 35. Shop
+ 36. Contact
+ 37. Sidebar
+ 38. Footer
+ 39. 404
+ 40. Soon
+ 41. Maintenance
+ 42. faQs
+ 43. Login
+ 44. Process
+ 45. Clients
+ 46. Skills
+ 47. Landing
+ 48. Side Nav
+ 49. Layout Boxed
+ 50. Layout Split
+
+
+ /*
+NOTES! QUICK SEARCH IN THIS FIKE!
+
+To make it easy to search about class or section, you do not need scroll in this file. Instead use 
+use [ CTR + F ] and type [ SECTION NAME ] or [ .class-name ] You can find it quickly and save your time. You have been noted! :)
+*/
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+.portfolio .portfolio-cat {
+	color: #9b9b9b;
+	font-family: 'Droid Serif', serif;
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 1;
+	position: relative;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
