@@ -193,3 +193,72 @@ p {
 	line-height: 23px;
 	margin-bottom: 0;
 }
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+::selection {
+	background: #ad4a36;
+	color: #ffffff;
+}
+::-moz-selection {
+ background: #ad4a36;
+  /* Firefox */
+  color: #ad4a36;
+}
+::-webkit-selection {
+ background: #ad4a36;
+  /* Safari */
+  color: #ffffff;
+}
+
+html {
+	font-size: 14px;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: 'Droid Serif', serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #9b9b9b;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.wrapper {
+	background-color: #ffffff;
+	padding: 0 80px;
+	overflow-x: hidden;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+
+.wrapper {
+	padding: 0;
+}
+}
+
+a {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	color: #ad4a36;
+}
+
+a:hover {
+	color: #ad4a36;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #ad4a36;
+	text-decoration: none;
+}
+
+a:active {
+	color: #ad4a36s;
+	text-decoration: none;
+}
