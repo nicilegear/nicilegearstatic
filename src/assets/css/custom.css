@@ -74,7 +74,7 @@ use [ CTR + F ] and type [ SECTION NAME ] or [ .class-name ] You can find it qui
 body {
 	background-color: #ffffff;
 	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
+	font-size: 16x;
 	font-weight: 400;
 	color: #9b9b9b;
 	line-height: 1.5;
@@ -85,7 +85,7 @@ body {
 .portfolio .portfolio-cat {
 	color: #9b9b9b;
 	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 700;
 	font-style: normal;
 	line-height: 1;
@@ -122,14 +122,14 @@ p {
 .heading p {
 	color: #616161;
 	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-style: normal;
 	line-height: 23px;
 	margin-bottom: 0;
 }
 /* changed slider info from serif to sans serif.*/
 .slider .slide--bio {
-	color: #474747;
+	color: #252525;
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	line-height: 26px;
@@ -148,7 +148,7 @@ p {
 /*changed colour of statement to less dark grey*/
 .footer-info-widget .bio-info p {
 	color: #9b9b9b;
-	font-size: 13px;
+	font-size: 16px;
 	font-style: normal;
 	max-width: 510px;
 	display: inline-block;
@@ -157,7 +157,7 @@ p {
 .footer-widget h3 {
 	color: #616161;
 	font-family: 'Poppins', sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	font-style: normal;
 	line-height: 1;
 	text-align: center;
@@ -165,7 +165,7 @@ p {
 }
 /* By Nici text in blog space - from italics to normal*/
 .entry .entry-meta {
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 700;
 	font-style: normal;
 	line-height: 26px;
@@ -188,7 +188,7 @@ p {
 .heading p {
 	color: #616161;
 	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-style: normal;
 	line-height: 23px;
 	margin-bottom: 0;
@@ -213,13 +213,13 @@ p {
 }
 
 html {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 body {
 	background-color: #ffffff;
 	font-family: 'Droid Serif', serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #9b9b9b;
 	line-height: 1.5;
