@@ -95,6 +95,10 @@ body {
 	-o-transition: all 0.8s ease-in-out;
 	transition: all 0.8s ease-in-out;
 }
+/* changing link colour from grey to black maybe... */
+.portfolio .portfolio-cat a {
+	color: #050505;
+}
 /* changed font from serif to a sans serif one. This is for Story description*/
 p {
 	font-family: 'Poppins', sans-serif;
