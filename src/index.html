@@ -429,7 +429,6 @@
                                            <span class="text-white"> <br><br> €120 for a mounted print. <br><br> 
                                             <!-- Stripe check out button test -->
 
-
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
@@ -437,7 +436,7 @@
   role="link"
   type="button"
 >
-  Buy now
+  Checkout
 </button>
 
 <div id="error-message"></div>
@@ -463,7 +462,7 @@
        * https://stripe.com/docs/payments/checkout/fulfill-orders
        */
       successUrl: window.location.protocol + '//nicilegear.com/success',
-      cancelUrl: window.location.protocol + '//nicilegear.com/canceled',
+      cancelUrl: window.location.protocol + '//nicilegear.com',
     })
     .then(function (result) {
       if (result.error) {
