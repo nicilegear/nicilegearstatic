@@ -427,12 +427,13 @@
                                     <div class="portfolio-cat">
                                         <span class="text-font-body">49 x 49cm (including mount), Kilkee <br> Looking across the bay from George's Head towards the Diamond Rock's Cafe and the cliff walk. </span>
                                            <span class="text-white"> <br><br> €120 for a mounted print. <br><br> 
-                                            <!-- Stripe check out button test -->
+                                            <!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
-  id="checkout-button-price_1KqNSxCD4IZuMHafs5Gcsmb4"
+  id="checkout-button-price_1KrOJQCD4IZuMHafbHQ8mJ8K"
   role="link"
   type="button"
 >
@@ -443,16 +444,16 @@
 
 <script>
 (function() {
-  var stripe = Stripe('pk_live_51KDxS6CD4IZuMHafwBdxlL1z65Rro0y7jua9ioTrPD4LsCpXDLh4V5lSaqayIeBSQjBVL6YDFr2yarRm4XnRBJKN00f20GzWNv');
+  var stripe = Stripe('pk_test_51KDxS6CD4IZuMHaf2DPx7sg9OEB9caarkpSoQMESJYNDpby98x9eZY4BDlXnw6rLsdyGpee5PKWiH5VUTDbZnfsE00RZ5GUP20');
 
-  var checkoutButton = document.getElementById('checkout-button-price_1KqNSxCD4IZuMHafs5Gcsmb4');
+  var checkoutButton = document.getElementById('checkout-button-price_1KrOJQCD4IZuMHafbHQ8mJ8K');
   checkoutButton.addEventListener('click', function () {
     /*
      * When the customer clicks on the button, redirect
      * them to Checkout.
      */
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1KqNSxCD4IZuMHafs5Gcsmb4', quantity: 1}],
+      lineItems: [{price: 'price_1KrOJQCD4IZuMHafbHQ8mJ8K', quantity: 1}],
       mode: 'payment',
       /*
        * Do not rely on the redirect to the successUrl for fulfilling
