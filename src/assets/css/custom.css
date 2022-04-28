@@ -263,7 +263,7 @@ a:focus {
 }
 
 a:active {
-	color: #ad4a36s;
+	color: #ad4a36;
 	text-decoration: none;
 }
 
@@ -280,3 +280,7 @@ portfolio .portfolio-filter a {
 	display: block;
 	position: relative;
 }
+ /* attempting to add pinch zoom and browser handling of zoom */
+ #element {
+ touch-action: auto
+ }
