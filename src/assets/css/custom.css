@@ -144,7 +144,7 @@ p {
 }
 /*change footer from droid serif to poppins*/
 .footer-info-widget p {
-	font-family: 'Poppins', serif;
+	font-family: 'Poppins';
 	line-height: 22px;
 	font-weight: 400;
 	margin-bottom: 0;
