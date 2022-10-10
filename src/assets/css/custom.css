@@ -140,11 +140,12 @@ p {
 }
 /* changing font to sans serif font from droid serif to poppins */
 .text-font-body {
-	font-family: 'Poppins', serif;
+	font-family: 'Poppins';
 }
 /*change footer from droid serif to poppins*/
 .footer-info-widget p {
 	font-family: 'Poppins';
+	font-style: normal;
 	line-height: 22px;
 	font-weight: 400;
 	margin-bottom: 0;
