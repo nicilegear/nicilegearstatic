@@ -191,7 +191,7 @@
             <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2 mb-30-xs mb-30-sm">
                 <div class="entry">
                     <div class="entry-featured">
-                        <img src="assets/images/blog/grid/1col/1.jpg" alt="entry title">
+                        <img src="assets/images/blog/grid/1col/kilkee-print.jpg" alt="kilkee print">
                     </div>
                     <!-- .entry-featured end -->
                     <div class="entry-post">
@@ -217,7 +217,62 @@
                     <div class="product-price">
                         €60
                     </div>
+                    <br>
 
+                    <!-- Load Stripe.js on your website. -->
+                    <script src="https://js.stripe.com/v3"></script>
+
+                    <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                    <button
+                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
+                    id="checkout-button-price_1LSMutCD4IZuMHaffechNXeo"
+                    role="link"
+                    type="button"
+                    >
+                    Buy now
+                    </button>
+
+                    <div id="error-message"></div>
+
+                    <script>
+                    (function() {
+                    var stripe = Stripe('pk_live_51KDxS6CD4IZuMHafwBdxlL1z65Rro0y7jua9ioTrPD4LsCpXDLh4V5lSaqayIeBSQjBVL6YDFr2yarRm4XnRBJKN00f20GzWNv');
+
+                    var checkoutButton = document.getElementById('checkout-button-price_1LSMutCD4IZuMHaffechNXeo');
+                    checkoutButton.addEventListener('click', function () {
+                        /*
+                        * When the customer clicks on the button, redirect
+                        * them to Checkout.
+                        */
+                        stripe.redirectToCheckout({
+                        lineItems: [{price: 'price_1LSMutCD4IZuMHaffechNXeo', quantity: 1}],
+                        mode: 'payment',
+                        /*
+                        * Do not rely on the redirect to the successUrl for fulfilling
+                        * purchases, customers may not always reach the success_url after
+                        * a successful payment.
+                        * Instead use one of the strategies described in
+                        * https://stripe.com/docs/payments/checkout/fulfill-orders
+                        */
+                        successUrl: window.location.protocol + '//nicilegear.com/success',
+                        cancelUrl: window.location.protocol + '//nicilegear.com/canceled',
+                        })
+                        .then(function (result) {
+                        if (result.error) {
+                            /*
+                            * If `redirectToCheckout` fails due to a browser or network
+                            * error, display the localized error message to your customer.
+                            */
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                        }
+                        });
+                    });
+                    })();
+                    </script>
+
+
+                    <br>
                     </div>
                     <!-- .entry-post end -->
                 </div>
