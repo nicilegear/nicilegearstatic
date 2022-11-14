@@ -214,12 +214,68 @@
 						
 					</div>
                     <div class="product-price">
-                        €45
+                        €40
                     </div>
                     </div>
                     <!-- .entry-post end -->
                 </div>
+                <br>
+                <!-- Load Stripe.js on your website. -->
+                <script src="https://js.stripe.com/v3"></script>
+
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button
+                style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
+                id="checkout-button-price_1LSMu2CD4IZuMHafJKw56CvI"
+                role="link"
+                type="button"
+                >
+                Buy now
+                </button>
+
+                <div id="error-message"></div>
+
+                <script>
+                (function() {
+                var stripe = Stripe('pk_live_51KDxS6CD4IZuMHafwBdxlL1z65Rro0y7jua9ioTrPD4LsCpXDLh4V5lSaqayIeBSQjBVL6YDFr2yarRm4XnRBJKN00f20GzWNv');
+
+                var checkoutButton = document.getElementById('checkout-button-price_1LSMu2CD4IZuMHafJKw56CvI');
+                checkoutButton.addEventListener('click', function () {
+                    /*
+                    * When the customer clicks on the button, redirect
+                    * them to Checkout.
+                    */
+                    stripe.redirectToCheckout({
+                    lineItems: [{price: 'price_1LSMu2CD4IZuMHafJKw56CvI', quantity: 1}],
+                    mode: 'payment',
+                    /*
+                    * Do not rely on the redirect to the successUrl for fulfilling
+                    * purchases, customers may not always reach the success_url after
+                    * a successful payment.
+                    * Instead use one of the strategies described in
+                    * https://stripe.com/docs/payments/checkout/fulfill-orders
+                    */
+                    successUrl: window.location.protocol + '//nicilegear.com/success',
+                    cancelUrl: window.location.protocol + '//nicilegear.com/canceled',
+                    })
+                    .then(function (result) {
+                    if (result.error) {
+                        /*
+                        * If `redirectToCheckout` fails due to a browser or network
+                        * error, display the localized error message to your customer.
+                        */
+                        var displayError = document.getElementById('error-message');
+                        displayError.textContent = result.error.message;
+                    }
+                    });
+                });
+                })();
+                </script>
+                <br>
+
                 <!-- .entry end -->
+
+
                 <div class="entry-share">
                     <span class="share-title">share this painting</span>
                     <span class="share-links">
