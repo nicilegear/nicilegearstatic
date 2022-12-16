@@ -65,7 +65,7 @@
 <!-- Document Title
     ============================================= -->
    
-<title>Cliffs of Moher Print</title>
+<title>Spanish Point Print</title>
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
@@ -169,13 +169,13 @@
                 <div class="title title-1">
                     <div class="title-content">
                         <div class="title-heading">
-                            <h1>Cliffs of Moher Print</h1>
+                            <h1>Spanish Point Print</h1>
                         </div>
                         <ol class="breadcrumb">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="shop.html">Shop</a></li>
                             <li><a href="shop-prints.html">Prints</a></li>
-                            <li class="active">Cliffs of Moher Print</li>
+                            <li class="active">Spanish Point Print</li>
                         </ol>
                     </div>
                 </div><!-- .page-title end -->
@@ -197,18 +197,18 @@
                     <!-- .entry-featured end -->
                     <div class="entry-post">
                         <div class="entry-date text-center">
-                            <a href="#">Originally painted in 2019</a>
+                            <a href="#">Originally painted in 2022</a>
                         </div>
                         <div class="entry-title text-center">
                             <h3>
-                                Cliffs of Moher Giclée print
+                                Spanish Point Giclée print
                             </h3>
                         </div>
                         
                         <!-- .entry-meta end -->
                         <div class="entry-content">
-                            <p>14 x 18 inches print. </p>
-                            <p>Cliffs of Moher, painted from the Liscannor side looking towards O'Briens Tower. This painting was created in rememberance of my dad. He was often found playing his Mandola on the steps to O'Brien's Tower. You could hear his crisp fast traditional Irish notes over the bitter sweet wind that is always present at the Cliffs. </p>
+                            <p>30 x 40cm print. </p>
+                            <p>Painted in grayscale to add to the peaceful nature of this landscape. Here you have a young boy (my son) at the edge of the sea, fighting the urge to get wet. It can be a moody or peaceful painting depending on the lens of the viewer. </p>
 						<p>All prints are on Epson Somerset Velvet archival fine art paper with 13 chromatic pigment inks. The paper is completely archival and 100% acid free which means it will not discolour or tarnish with ageing. The prints are also light resistant for up to 150 years.</p>
 					<p>Free shipping for all prints to Ireland</p>
 					<p>Please <a href="mailto:nicilegear@gmail.com">email</a> me for postage internationally</p>
@@ -220,58 +220,57 @@
                     </div>
                     <br>
 
-                    <!-- Load Stripe.js on your website. -->
-                <script src="https://js.stripe.com/v3"></script>
+                   <!-- Load Stripe.js on your website. -->
+                    <script src="https://js.stripe.com/v3"></script>
 
-                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                <button
-                style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
-                id="checkout-button-price_1LSMvWCD4IZuMHafh1MUytSp"
-                role="link"
-                type="button"
-                >
-                Buy now
-                </button>
+                    <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                    <button
+                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
+                    id="checkout-button-price_1MFaTDCD4IZuMHafWvlOcDD8"
+                    role="link"
+                    type="button"
+                    >
+                    Buy now
+                    </button>
 
-                <div id="error-message"></div>
+                    <div id="error-message"></div>
 
-                <script>
-                (function() {
-                var stripe = Stripe('pk_live_51KDxS6CD4IZuMHafwBdxlL1z65Rro0y7jua9ioTrPD4LsCpXDLh4V5lSaqayIeBSQjBVL6YDFr2yarRm4XnRBJKN00f20GzWNv');
+                    <script>
+                    (function() {
+                    var stripe = Stripe('pk_live_51KDxS6CD4IZuMHafwBdxlL1z65Rro0y7jua9ioTrPD4LsCpXDLh4V5lSaqayIeBSQjBVL6YDFr2yarRm4XnRBJKN00f20GzWNv');
 
-                var checkoutButton = document.getElementById('checkout-button-price_1LSMvWCD4IZuMHafh1MUytSp');
-                checkoutButton.addEventListener('click', function () {
-                    /*
-                    * When the customer clicks on the button, redirect
-                    * them to Checkout.
-                    */
-                    stripe.redirectToCheckout({
-                    lineItems: [{price: 'price_1LSMvWCD4IZuMHafh1MUytSp', quantity: 1}],
-                    mode: 'payment',
-                    /*
-                    * Do not rely on the redirect to the successUrl for fulfilling
-                    * purchases, customers may not always reach the success_url after
-                    * a successful payment.
-                    * Instead use one of the strategies described in
-                    * https://stripe.com/docs/payments/checkout/fulfill-orders
-                    */
-                    successUrl: window.location.protocol + '//nicilegear.com/success',
-                    cancelUrl: window.location.protocol + '//nicilegear.com/canceled',
-                    })
-                    .then(function (result) {
-                    if (result.error) {
+                    var checkoutButton = document.getElementById('checkout-button-price_1MFaTDCD4IZuMHafWvlOcDD8');
+                    checkoutButton.addEventListener('click', function () {
                         /*
-                        * If `redirectToCheckout` fails due to a browser or network
-                        * error, display the localized error message to your customer.
+                        * When the customer clicks on the button, redirect
+                        * them to Checkout.
                         */
-                        var displayError = document.getElementById('error-message');
-                        displayError.textContent = result.error.message;
-                    }
+                        stripe.redirectToCheckout({
+                        lineItems: [{price: 'price_1MFaTDCD4IZuMHafWvlOcDD8', quantity: 1}],
+                        mode: 'payment',
+                        /*
+                        * Do not rely on the redirect to the successUrl for fulfilling
+                        * purchases, customers may not always reach the success_url after
+                        * a successful payment.
+                        * Instead use one of the strategies described in
+                        * https://stripe.com/docs/payments/checkout/fulfill-orders
+                        */
+                        successUrl: window.location.protocol + '//nicilegear.com/success',
+                        cancelUrl: window.location.protocol + '//nicilegear.com/canceled',
+                        })
+                        .then(function (result) {
+                        if (result.error) {
+                            /*
+                            * If `redirectToCheckout` fails due to a browser or network
+                            * error, display the localized error message to your customer.
+                            */
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                        }
+                        });
                     });
-                });
-                })();
-                </script>
-                    
+                    })();
+                    </script>
 
 
                     <br>
