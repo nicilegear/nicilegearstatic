@@ -227,11 +227,11 @@
                     <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
                     <button
                     style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
-                    id="checkout-button-price_1M2aaYCD4IZuMHaf3lh675N9"
+                    id="checkout-button-price_1MPYIkCD4IZuMHafq3Ly8o7V"
                     role="link"
                     type="button"
                     >
-                    Buy now
+                    Buy Now
                     </button>
 
                     <div id="error-message"></div>
@@ -240,14 +240,14 @@
                     (function() {
                     var stripe = Stripe('pk_live_51KDxS6CD4IZuMHafwBdxlL1z65Rro0y7jua9ioTrPD4LsCpXDLh4V5lSaqayIeBSQjBVL6YDFr2yarRm4XnRBJKN00f20GzWNv');
 
-                    var checkoutButton = document.getElementById('checkout-button-price_1M2aaYCD4IZuMHaf3lh675N9');
+                    var checkoutButton = document.getElementById('checkout-button-price_1MPYIkCD4IZuMHafq3Ly8o7V');
                     checkoutButton.addEventListener('click', function () {
                         /*
                         * When the customer clicks on the button, redirect
                         * them to Checkout.
                         */
                         stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1M2aaYCD4IZuMHaf3lh675N9', quantity: 1}],
+                        lineItems: [{price: 'price_1MPYIkCD4IZuMHafq3Ly8o7V', quantity: 1}],
                         mode: 'payment',
                         /*
                         * Do not rely on the redirect to the successUrl for fulfilling
@@ -271,7 +271,8 @@
                         });
                     });
                     })();
-                    </script>       
+                    </script>                    
+
                 <br>
                 
                 </div>
@@ -440,7 +441,7 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-3">
                         <div class="copyright-info text-right">
-                            <p>&copy; 2022 Nici Le Gear Art. </p>
+                            <p>&copy; 2023 Nici Le Gear Art. </p>
                             <p>All Rights Reserved.</p>
                         </div>
                     </div>
