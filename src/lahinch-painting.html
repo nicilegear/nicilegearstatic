@@ -207,8 +207,8 @@
                         <!-- .entry-meta end -->
                         <div class="entry-content">
                             <p>20 x 16 inches</p> 
-                            <p>Acrylic painting on board. </p>
-                            <p>A typical Irish day at Lahinch beach. As kids we loved climbing the rocks! So I painted them with loads of texture 😍</p>
+                            <p>Acrylic painting, on canvas, framed. </p>
+                            <p>A typical Irish day at Lahinch beach, Co. Clare. As kids we loved climbing the rocks! So I painted them with loads of texture 😍</p>
 					
 					<p>Flat rate shipping fee of €25</p>
 					<p>Please <a href="mailto:nicilegear@gmail.com">email</a> me for postage internationally</p>
@@ -216,9 +216,63 @@
 					</p>	
 					</div>
                     <div class="product-price">
-                       SOLD
+                        €489
+                        <br>
                     </div>
                     </div>
+
+                                        <!-- Load Stripe.js on your website. -->
+                    <script src="https://js.stripe.com/v3"></script>
+
+                    <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                    <button
+                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
+                    id="checkout-button-price_1MYuJdCD4IZuMHaf8IO73Km5"
+                    role="link"
+                    type="button"
+                    >
+                    Buy now
+                    </button>
+
+                    <div id="error-message"></div>
+
+                    <script>
+                    (function() {
+                    var stripe = Stripe('pk_live_51KDxS6CD4IZuMHafwBdxlL1z65Rro0y7jua9ioTrPD4LsCpXDLh4V5lSaqayIeBSQjBVL6YDFr2yarRm4XnRBJKN00f20GzWNv');
+
+                    var checkoutButton = document.getElementById('checkout-button-price_1MYuJdCD4IZuMHaf8IO73Km5');
+                    checkoutButton.addEventListener('click', function () {
+                        /*
+                        * When the customer clicks on the button, redirect
+                        * them to Checkout.
+                        */
+                        stripe.redirectToCheckout({
+                        lineItems: [{price: 'price_1MYuJdCD4IZuMHaf8IO73Km5', quantity: 1}],
+                        mode: 'payment',
+                        /*
+                        * Do not rely on the redirect to the successUrl for fulfilling
+                        * purchases, customers may not always reach the success_url after
+                        * a successful payment.
+                        * Instead use one of the strategies described in
+                        * https://stripe.com/docs/payments/checkout/fulfill-orders
+                        */
+                        successUrl: window.location.protocol + '//nicilegear.com/success',
+                        cancelUrl: window.location.protocol + '//nicilegear.com/canceled',
+                        })
+                        .then(function (result) {
+                        if (result.error) {
+                            /*
+                            * If `redirectToCheckout` fails due to a browser or network
+                            * error, display the localized error message to your customer.
+                            */
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                        }
+                        });
+                    });
+                    })();
+                    </script>
+                    <br>
                     <!-- .entry-post end -->
                 </div>
                 <!-- .entry end -->
